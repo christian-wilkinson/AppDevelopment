@@ -1,0 +1,72 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "edu.wilkinson.christian.localstoragedemo"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <title>JQuery Mobile</title>
+</head>
+
+<body>
+    <div data-role="page" id="first">
+        <div data-role="header" data-position="fixed">
+            <h1> Page 1 </h1>
+            <a href="#second" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="ui-btn-active ui-state-persist"></a>
+                    </li>
+                    <li><a href="#second">Page 2</a></li>
+                    <li><a href="#third">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <label for="switch">Flip Me!</label>
+            <input type="checkbox" id="switch" name="switch" data-role="flipswitch" data-on-text="Yes" data-off-text="No" />
+        </div>
+
+        <fieldset data-role="controlGroup">
+            <legend>Favorite Band</legend>
+            <input type="radio" name="bands" id="journey" checked="checked" />
+            <label for="journey">Journey</label>
+        </fieldset>
+
+        <fieldset data-role="controlGroup">
+            <legend>Favorite Band</legend>
+            <input type="radio" name="bands" id="reo" />
+            <label for="reo">REO Speedwagon</label>
+        </fieldset>
+
+        <fieldset data-role="controlGroup">
+            <legend>Favorite Band</legend>
+            <input type="radio" name="bands" id="styx" />
+            <label for="styx">Styx</label>
+        </fieldset>
+
+        <label for="foods" class="select">Foods</label>
+        <select id="foods">
+            <option value="cheese">Cheese</option>
+            <option value="pizza">Pizza</option>
+            <option value="chinese">Chinese</option>
+        </select>
+
+        <div role="main" class="ui-content">
+            <p>Page 1 Content</p>
+
+            <a href="#" class="ui-btn">Anchor</a>
+            <button onclick="alert('hi);">Button</button>
+            <button data-role="none">Native</button>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lorem purus. Integer imperdiet euismod quam, ut venenatis libero gravida vel. Phasellus venenatis vestibulum eros vel sagittis. Sed et mi risus. Suspendisse et felis eros. Aenean tempus ut lacus et dignissim. Aenean purus enim, cursus accumsan arcu non, interdum facilisis dolor. Cras ultricies velit magna, et aliquam magna semper id. Aenean nec tempus dolor. Integer condimentum odio at justo scelerisque, non porta nulla mattis. Mauris eu lobortis felis.</p>
+
+            <p>Nulla vitae dapibus purus. Donec lacinia, leo non consequat malesuada, lorem ex lacinia dolor, vel varius diam nibh quis leo. Vivamus eu arcu nec mauris convallis vestibulum eget et mauris. Suspendisse pellentesque erat tellus, eget dictum orci commodo ut. Proin ut mauris ut urna feugiat tincidunt. Sed pretium mauris sed tortor dignissim, a pellentesque enim interdum. Suspendisse potenti. In semper bibendum elit, sed pellentesque magna luctus non. Quisque suscipit lacus vel fringilla viverra. Aliquam a nibh a neque consectetur dictum in in est. Ut faucibus a mauris in blandit. Suspendisse potenti.</p>
+
+            <p>Phasellus sit amet nunc ut est vehicula faucibus ac nec ante. Aenean at imperdiet ipsum, a consequat ligula. Phasellus sit amet laoreet augue, eu egestas sem. Proin scelerisque lorem nec diam lobortis varius. Ut condimentum ante mauris, at maximus elit elementum et. Fusce sit amet urna eu augue eleifend condimentum sit amet quis velit. Sed nec faucibus sem.</p>
+
+            <p>Nunc eget sodales ipsum. Vivamus eget cursus diam. Maecenas feugiat velit tortor, eu tincidunt augue mattis eu. Praesent maximus tempus mattis. Aenean vel sem sollicitudin, rutrum nibh sit amet, pulvinar ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla hendrerit dui et ornare. Nulla viverra lacus at leo semper ultricies eget nec dui. Etiam nec lobortis enim, quis blandit magna. Praesent non diam rutrum, vulputate diam ut, auctor nunc. Praesent laoreet mattis vulputate. Phasellus consequat quam eu arcu finibus tempor. Ut rutrum maximus dictum. Donec elementum ultricies odio, dapibus eleifend justo eleifend elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <p>Aliquam ultricies nunc sed dolor finibus eleifend. Cras viverra odio et ex tristique semper. Aenean sapien justo, aliquet vitae vehicula ut, rhoncus sed lectus. Cras vel mi facilisis, dapibus magna non, aliquam quam. Donec semper eros tortor, sed accumsan magna euismod eu. Praesent auctor interdum congue. Praesent risus turpis, porttitor eget hendrerit vel, ultricies pretium ipsum.</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h3> (c) LTP Media </h3>
+        </div>
+    </div>
+
+    <div data-role="page" id="second">
+        <div data-role="header" data-position="fixed">
+            <a href="#first" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+            <h1> Page 2 </h1>
+            <a href="#third" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#first">Page 1</a></li>
+                <li><a href="#" class="ui-btn-active ui-state-persist">Page 2</a></li>
+                <li><a href="#third">Page 3</a></li>
+            </ul>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>Page 2 Content</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo tellus sed placerat vulputate. Suspendisse egestas in risus quis laoreet. Nunc sit amet nibh ut ligula pharetra facilisis. Aliquam et sem orci. In tempus aliquam nisl. Proin eu sodales augue, tincidunt eleifend sapien. Donec tempor consequat vehicula. Nam tincidunt condimentum nisi id mollis. Curabitur id vestibulum magna. Nam mattis ipsum ac mauris vulputate venenatis.</p>
+
+            <p>Proin vestibulum nisi sed enim commodo sodales. Vivamus tristique augue quis ultricies tempus. Curabitur sodales nulla in urna vestibulum pretium. Sed volutpat rutrum sollicitudin. Fusce ornare ex orci, in tristique orci congue vel. Praesent a felis at sapien gravida mollis. Morbi porttitor est hendrerit, venenatis turpis dignissim, molestie lacus. Donec laoreet ac libero at faucibus. Suspendisse luctus sit amet augue at volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur auctor nisl in augue varius, in mattis mi egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ut ligula ullamcorper, interdum mauris eget, ullamcorper lorem. Aenean sit amet mollis mi. Duis sed turpis felis. Sed ac libero id augue congue posuere nec quis neque.</p>
+
+            <p>Phasellus malesuada erat ac fringilla ullamcorper. Cras interdum lobortis tellus, in porta leo sodales eu. Duis rutrum lacus ac nisl rhoncus, ut finibus nunc malesuada. Ut vitae venenatis ex, a laoreet nisi. Duis at sapien eu elit condimentum tincidunt quis quis velit. Quisque in dui rhoncus, rhoncus nisi eget, dictum ipsum. Suspendisse tristique libero congue urna volutpat, sed scelerisque lorem rutrum. In hac habitasse platea dictumst. Sed a dolor scelerisque, lacinia tortor in, euismod libero. Nam rutrum, nisi sed semper efficitur, eros sapien molestie felis, id ullamcorper nibh arcu non metus. Donec a pharetra libero. Nunc mi ex, faucibus id felis sed, blandit condimentum enim.</p>
+
+            <p>Fusce vehicula dictum tellus, placerat auctor tellus accumsan ultrices. Aliquam et nisi purus. Vivamus sit amet lectus ut justo fermentum pretium. Aliquam vestibulum, erat non egestas varius, velit ante laoreet urna, sit amet posuere nibh sem eget lorem. Praesent tristique mauris quis porttitor tincidunt. Fusce eros eros, euismod et varius non, maximus a lectus. Nam convallis eu justo ut consequat. Sed vehicula leo at elit pulvinar, interdum lacinia dui cursus. Vivamus quis volutpat quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <p>Nam ligula mi, pretium eu urna eu, fringilla consectetur sapien. Morbi fermentum odio quis tellus ullamcorper accumsan. Suspendisse ac ullamcorper magna. Phasellus vel lacinia est. Nam nec ipsum vel ex tincidunt viverra. Etiam fringilla, ligula et molestie sagittis, nibh diam commodo ipsum, eu fringilla orci nisi vel ipsum. Nullam odio orci, eleifend consequat pulvinar ut, molestie quis lacus. Sed tristique id leo vitae pulvinar. Donec facilisis neque id accumsan dignissim. Mauris scelerisque, dui ut commodo pretium, nunc orci lobortis ligula, at consequat metus enim et ex. Cras suscipit nibh sed erat bibendum, in tincidunt lacus elementum. Sed vitae ligula pretium, rutrum nisl at, aliquet arcu. Aenean pellentesque bibendum elit, rutrum pretium quam vehicula ac. Nullam euismod nisi vel orci faucibus, in porta metus malesuada.</p>
+
+
+        </div>
+
+        <div data-role="footer" data-postion="fixed">
+            <h3> (c) LTP Media </h3>
+        </div>
+    </div>
+    <div data-role="page" id="third">
+        <div data-role="header" data-position="fixed">
+            <a href="#second" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+            <h1> Page 3 </h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#first">Page 1</a></li>
+                <li><a href="#second">Page 2</a></li>
+                <li><a href="#" class="ui-btn-active ui-state-persist">Page 3</a></li>
+            </ul>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>Page 3 Content</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lorem purus. Integer imperdiet euismod quam, ut venenatis libero gravida vel. Phasellus venenatis vestibulum eros vel sagittis. Sed et mi risus. Suspendisse et felis eros. Aenean tempus ut lacus et dignissim. Aenean purus enim, cursus accumsan arcu non, interdum facilisis dolor. Cras ultricies velit magna, et aliquam magna semper id. Aenean nec tempus dolor. Integer condimentum odio at justo scelerisque, non porta nulla mattis. Mauris eu lobortis felis.</p>
+
+            <p>Nulla vitae dapibus purus. Donec lacinia, leo non consequat malesuada, lorem ex lacinia dolor, vel varius diam nibh quis leo. Vivamus eu arcu nec mauris convallis vestibulum eget et mauris. Suspendisse pellentesque erat tellus, eget dictum orci commodo ut. Proin ut mauris ut urna feugiat tincidunt. Sed pretium mauris sed tortor dignissim, a pellentesque enim interdum. Suspendisse potenti. In semper bibendum elit, sed pellentesque magna luctus non. Quisque suscipit lacus vel fringilla viverra. Aliquam a nibh a neque consectetur dictum in in est. Ut faucibus a mauris in blandit. Suspendisse potenti.</p>
+
+            <p>Phasellus sit amet nunc ut est vehicula faucibus ac nec ante. Aenean at imperdiet ipsum, a consequat ligula. Phasellus sit amet laoreet augue, eu egestas sem. Proin scelerisque lorem nec diam lobortis varius. Ut condimentum ante mauris, at maximus elit elementum et. Fusce sit amet urna eu augue eleifend condimentum sit amet quis velit. Sed nec faucibus sem.</p>
+
+            <p>Nunc eget sodales ipsum. Vivamus eget cursus diam. Maecenas feugiat velit tortor, eu tincidunt augue mattis eu. Praesent maximus tempus mattis. Aenean vel sem sollicitudin, rutrum nibh sit amet, pulvinar ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla hendrerit dui et ornare. Nulla viverra lacus at leo semper ultricies eget nec dui. Etiam nec lobortis enim, quis blandit magna. Praesent non diam rutrum, vulputate diam ut, auctor nunc. Praesent laoreet mattis vulputate. Phasellus consequat quam eu arcu finibus tempor. Ut rutrum maximus dictum. Donec elementum ultricies odio, dapibus eleifend justo eleifend elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <p>Aliquam ultricies nunc sed dolor finibus eleifend. Cras viverra odio et ex tristique semper. Aenean sapien justo, aliquet vitae vehicula ut, rhoncus sed lectus. Cras vel mi facilisis, dapibus magna non, aliquam quam. Donec semper eros tortor, sed accumsan magna euismod eu. Praesent auctor interdum congue. Praesent risus turpis, porttitor eget hendrerit vel, ultricies pretium ipsum.</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h3> (c) LTP Media </h3>
+        </div>
+    </div>
+
+</body>
