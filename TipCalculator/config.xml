@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-    <widget id="christianwilkinson.wordpress.com.tipcalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" ios-CFBundleVersion="2016072101">
+    <widget id="com.wordpress.christianwilkinson.tipcalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" ios-CFBundleVersion="2016072101">
         <name>TipCalculator</name>
         <description>Simple Tip Calculator</description>
         <author email="christian.wilkinson@bobcats.gcsu.edu" href="christianwilkinson.wordpress.com">Christian Wilkinson</author>
@@ -22,7 +22,7 @@
         <preference name="StatusBarOverlaysWebView" value="false" />
         <preference name="StatusBarStyle" value="default" />
         <platform name="ios">
-            <icon src="www/res/icon/ios/icon-60@3x.png" width="180" height="180" />
+            <icon src="res/icon/ios/icon-60@3x.png" width="180" height="180" />
         </platform>
         <platform name="ios">
             <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
